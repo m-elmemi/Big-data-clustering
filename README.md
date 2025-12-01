@@ -94,15 +94,15 @@ Tests the stability and performance of the algorithms by varying the number of c
 Generates a suite of comparative plots to visualize the results:
 
 *   **8.1 Execution Time Comparison by K**: Compares how long each framework takes as the number of clusters increases.
-    ![Execution Time vs K](01_execution_time_vs_k.png)
+    ![Execution Time vs K](images/01_execution_time_vs_k.png)
 
 *   **8.2 Silhouette Score Comparison by K**: Validates that both frameworks achieve similar clustering quality.
-    ![Silhouette Score vs K](02_silhouette_vs_k.png)
+    ![Silhouette Score vs K](images/02_silhouette_vs_k.png)
 
 *   **8.3 Inertia Comparison by K**: Checks the sum of squared distances to ensure convergence consistency.
 *   **8.4 Scaling with Dataset Size (K=5)**: Demonstrates the relationship between data volume and processing time.
 *   **8.5 Speedup Ratio**: Quantifies the performance gap (e.g., "Scikit-Learn is 5x faster").
-    ![Speedup Factor](07_speedup_factor.png)
+    ![Speedup Factor](images/07_speedup_factor.png)
 
 *   **8.6 Memory Usage Comparison**: Analyzes the RAM footprint of each approach.
 
@@ -115,6 +115,15 @@ Summarizes the findings of the study:
 ### 📂 Project Structure
 ```
 .
+├── images/                       # Generated visualization images
+│   ├── 01_execution_time_vs_k.png
+│   ├── 02_silhouette_vs_k.png
+│   ├── 03_inertia_vs_k.png
+│   ├── 04_memory_vs_k.png
+│   ├── 05_sklearn_time_across_datasets.png
+│   ├── 06_pyspark_time_across_datasets.png
+│   ├── 07_speedup_factor.png
+│   └── 08_metric_heatmaps.png
 ├── TP_big_data_clustering.ipynb  # Main analysis notebook
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
